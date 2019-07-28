@@ -10,7 +10,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int n;
+
+            Console.Write("Enter a positive integer: ");
+            n = Int32.Parse(Console.ReadLine());
+
+            if (n % 2 == 0) //n is even
+            {
+                n = n / 2;
+            }
+            else
+            {
+                n = 3 * n + 1;
+            }
+
+            Console.WriteLine("The final value of n is " + n);
         }
     }
 }
